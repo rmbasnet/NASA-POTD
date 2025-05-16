@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Adjust the gap between the two divs as needed */
+    height: 100vh;
+    /* This makes the home container take the full viewport height */
+    width: 100%;
+}
+
+.outerDiv {
+    flex: 1;
+    /* This allows the div to grow and take available space */
+    max-width: 1024px;
+    /* Matches your picture-card width */
+    display: flex;
+    justify-content: center;
+}
+
+.picture-card {
+    padding-left: 1.25rem;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+}
+
+.infoDiv {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2c3e50;
+    padding: 1.5rem;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    /* Key for vertical alignment */
+    height: fit-content;
+    max-height: 100%;
+    /* Matches image height */
+    /* margin-left: 1rem; */
+    margin-right: 1rem;
+    box-sizing: border-box;
+}
+
+.infoDiv .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.infoDiv .date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.infoDiv .explanation {
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-y: auto;
+    /* max-height: 300px; */
+    /* Scrollable if content exceeds */
+    padding-right: 5px;
+}
+
+/* Slim scrollbar */
+/* .infoDiv .explanation::-webkit-scrollbar {
+    width: 3px;
+}
+
+.infoDiv .explanation::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+} */
